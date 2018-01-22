@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>resizing</title>
+    <style lang="">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        #resize {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>width
+        <input type="number" id="input1" value="200">
+    </label>
+    <label>
+        height
+        <input type="number" id="input2" value="200">
+    </label>
+    <div id="resize">
+    </div>
+    <script src="./../index.min.js"></script>
+    <script>
+        var resize = document.querySelector('#resize')
+        document.querySelector('#input1').addEventListener('input', function(e) {
+            resize.style.width = e.target.value + 'px'
+        })
+        document.querySelector('#input2').addEventListener('input', function(e) {
+            resize.style.height = e.target.value + 'px'
+        })
+
+        var r = new Resizing(resize)
+        r.on(function (e) {
+            console.log(e)
+        })
+    </script>
+</body>
+
+</html>

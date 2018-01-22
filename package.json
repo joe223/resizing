@@ -1,0 +1,40 @@
+{
+  "name": "resizing",
+  "version": "0.0.1",
+  "description": "Detect DOM resizing",
+  "main": "index.min.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "dev": "rollup main.js -w --o index.min.js -f umd --name Resizing -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joe223/resizing.git"
+  },
+  "keywords": [
+    "DOM",
+    "resizing",
+    "onresize"
+  ],
+  "author": "joe223",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joe223/resizing/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "rollup": "^0.53.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "homepage": "https://github.com/joe223/resizing#readme"
+}
