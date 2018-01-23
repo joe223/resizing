@@ -1,3 +1,6 @@
+/**
+ * Create by joe223
+ */
 export default class Resizing {
     constructor (el) {
         this.el = el
