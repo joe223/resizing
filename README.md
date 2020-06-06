@@ -1,12 +1,27 @@
-Inspired by https://github.com/marcj/css-element-queries
-> minify 1.4k
+# Resizing
+
+DOM resizing detector, 1kb after minified.
+
+# Install
+
+```shell
+npm install resizing --save
+```
+
 # Usage
+
 ```javascript
-var r = new Resizing(dom: Element)
+import Resizing from 'resizing'
+
+const r = new Resizing(dom: Element)
+
 function detector(evt: ScrollEvent) {
     console.log('resizing!')
 }
+
 r.on(detector)
 r.off(detector)
 r.destroy()
 ```
+
+Inspired by https://github.com/marcj/css-element-queries
