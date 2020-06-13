@@ -1,6 +1,6 @@
 {
   "name": "resizing",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Detect DOM resizing",
   "main": "index.min.js",
   "directories": {
